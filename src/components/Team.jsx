@@ -9,15 +9,51 @@ import { motion } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 
 const TEAM_MEMBERS = [
-  { name: "Member 1", position: "Committee Member", image: "/images/team/member1 (2).jpg" },
-  { name: "Member 2", position: "Committee Member", image: "/images/team/member1 (3).jpg" },
-  { name: "Member 3", position: "Committee Member", image: "/images/team/member1 (4).jpg" },
-  { name: "Member 4", position: "Committee Member", image: "/images/team/member1 (5).jpg" },
-  { name: "Member 5", position: "Committee Member", image: "/images/team/member1 (6).jpg" },
-  { name: "Member 6", position: "Committee Member", image: "/images/team/member1 (7).jpg" },
-  { name: "Member 7", position: "Committee Member", image: "/images/team/member1 (9).jpg" },
-  { name: "Member 8", position: "Committee Member", image: "/images/team/member1 (10).jpg" },
-  { name: "Member 9", position: "Committee Member", image: "/images/team/member1 (12).jpg" },
+  {
+    name: "Member 1",
+    position: "Committee Member",
+    image: "/images/team/member1 (2).jpg",
+  },
+  {
+    name: "Member 2",
+    position: "Committee Member",
+    image: "/images/team/member1 (3).jpg",
+  },
+  {
+    name: "Member 3",
+    position: "Committee Member",
+    image: "/images/team/member1 (4).jpg",
+  },
+  {
+    name: "Member 4",
+    position: "Committee Member",
+    image: "/images/team/member1 (5).jpg",
+  },
+  {
+    name: "Member 5",
+    position: "Committee Member",
+    image: "/images/team/member5.jpeg",
+  },
+  {
+    name: "Member 6",
+    position: "Committee Member",
+    image: "/images/team/member6.jpeg",
+  },
+  {
+    name: "Member 7",
+    position: "Committee Member",
+    image: "/images/team/member1 (9).jpg",
+  },
+  {
+    name: "Member 8",
+    position: "Committee Member",
+    image: "/images/team/member1 (10).jpg",
+  },
+  {
+    name: "Member 9",
+    position: "Committee Member",
+    image: "/images/team/member1 (12).jpg",
+  },
 ];
 
 const containerVariants = {
@@ -111,9 +147,7 @@ export default function Team() {
     >
       {/* Hero header */}
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12 pt-24 pb-10 sm:pt-28 sm:pb-14 md:pt-44 md:pb-24">
-        <p
-          className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.3em] text-black/40 font-medium mb-4 sm:mb-6"
-        >
+        <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.3em] text-black/40 font-medium mb-4 sm:mb-6">
           <TextReveal
             splitType="chars"
             direction="up"
@@ -125,9 +159,7 @@ export default function Team() {
           </TextReveal>
         </p>
 
-        <h1
-          className="team-heading text-[2.5rem] sm:text-[3.5rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] font-bold leading-[0.95] tracking-tight text-[#05004c]"
-        >
+        <h1 className="team-heading text-[2.5rem] sm:text-[3.5rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] font-bold leading-[0.95] tracking-tight text-[#05004c]">
           <TextReveal
             splitType="chars"
             direction="up"
@@ -182,9 +214,7 @@ export default function Team() {
                   alt={member.name}
                   fill
                   className={`object-cover transition-all duration-700 ease-out ${
-                    hoveredIndex === index
-                      ? "scale-105"
-                      : "scale-100"
+                    hoveredIndex === index ? "scale-105" : "scale-100"
                   }`}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
