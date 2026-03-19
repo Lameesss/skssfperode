@@ -81,6 +81,13 @@ export default function Navbar() {
                 >
                   EVENTS
                 </Link>
+                <Link
+                  href="/accounts"
+                  className="text-sm font-medium tracking-wide hover:opacity-70 transition-opacity font-[family-name:var(--font-outfit)]"
+                  style={{ color: "#000000" }}
+                >
+                  ACCOUNTS
+                </Link>
               </div>
 
               {/* Right Side Actions removed as requested */}
@@ -187,6 +194,23 @@ export default function Navbar() {
                 </span>
                 <span className="text-xl">→</span>
               </Link>
+              
+              <Link
+                href="/accounts"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`flex items-center justify-between py-6 border-b border-gray-300 hover:opacity-70 transition-all duration-500 delay-150 font-[family-name:var(--font-outfit)] ${
+                  mobileMenuOpen
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 translate-x-12"
+                }`}
+                style={{ color: "#000000" }}
+              >
+                <span className="text-sm font-medium tracking-wide">
+                  ACCOUNTS
+                </span>
+                <span className="text-xl">→</span>
+              </Link>
+
 
               {/* Events */}
               <Link
