@@ -28,10 +28,7 @@ const navLinks = [
 ];
 
 const socials = [
-  { label: "Instagram", href: "#" },
-  { label: "Twitter", href: "#" },
-  { label: "Facebook", href: "#" },
-  { label: "LinkedIn", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/skssf.perode/?hl=en" },
 ];
 
 export default function Footer() {
@@ -95,19 +92,27 @@ export default function Footer() {
             <ul className="space-y-2.5">
               <li>
                 <a
-                  href="mailto:info@skssf.org"
+                  href="mailto:Skssfperode786@gmail.com"
                   className="text-sm text-white hover:text-white/70 transition-colors duration-300"
                 >
-                  info@skssf.org
+                  Skssfperode786@gmail.com
                 </a>
               </li>
               <li>
-                <a
-                  href="tel:+910000000000"
-                  className="text-sm text-white hover:text-white/70 transition-colors duration-300"
-                >
-                  +91 000 000 0000
-                </a>
+                <div className="flex flex-col gap-1.5">
+                  <a
+                    href="tel:+919645764901"
+                    className="text-sm text-white hover:text-white/70 transition-colors duration-300"
+                  >
+                    +91 96457 64901 (President)
+                  </a>
+                  <a
+                    href="tel:+919037171068"
+                    className="text-sm text-white hover:text-white/70 transition-colors duration-300"
+                  >
+                    +91 90371 71068 (Secretary)
+                  </a>
+                </div>
               </li>
             </ul>
           </motion.div>
@@ -118,6 +123,8 @@ export default function Footer() {
               Location
             </h4>
             <p className="text-sm leading-relaxed" style={{ color: "#ffffff" }}>
+              SKSSF Office Perode,
+              <br />
               Kerala, India
             </p>
           </motion.div>

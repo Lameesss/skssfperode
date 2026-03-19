@@ -10,49 +10,64 @@ gsap.registerPlugin(ScrollTrigger);
 
 const TEAM_MEMBERS = [
   {
-    name: "Member 1",
-    position: "Committee Member",
-    image: "/images/team/member1 (2).jpg",
+    name: "Sanah K",
+    position: "President",
+    image: "/images/team/sanahk.jpg",
   },
   {
-    name: "Member 2",
-    position: "Committee Member",
-    image: "/images/team/member1 (3).jpg",
+    name: "Basil T P",
+    position: "Secretary",
+    image: "/images/team/basiltp.jpg",
   },
   {
-    name: "Member 3",
-    position: "Committee Member",
-    image: "/images/team/member1 (4).jpg",
+    name: "Rasin M",
+    position: "Treasurer",
+    image: "/images/team/rasinm.jpg",
   },
   {
-    name: "Member 4",
-    position: "Committee Member",
-    image: "/images/team/member1 (5).jpg",
+    name: "Nujoom Hudavi",
+    position: "Vice President",
+    image: "/images/team/nujoomhudavi.jpg",
   },
   {
-    name: "Member 5",
-    position: "Committee Member",
-    image: "/images/team/member5.jpeg",
+    name: "Ashfaq U K",
+    position: "Working Secretary",
+    image: "/images/team/ashfaquk.jpg",
   },
   {
-    name: "Member 6",
-    position: "Committee Member",
-    image: "/images/team/member6.jpeg",
+    name: "Basith T",
+    position: "Sahajari",
+    image: "/images/team/basitht.jpg",
   },
   {
-    name: "Member 7",
-    position: "Committee Member",
-    image: "/images/team/member1 (9).jpg",
+    name: "Inshad K",
+    position: "Media Wing",
+    image: "/images/team/inshadk.jpg",
   },
   {
-    name: "Member 8",
-    position: "Committee Member",
-    image: "/images/team/member1 (10).jpg",
+    name: "Muhammed P",
+    position: "Joint Secretary",
+    image: "/images/team/muhammedp.jpg",
   },
   {
-    name: "Member 9",
-    position: "Committee Member",
-    image: "/images/team/member1 (12).jpg",
+    name: "Mujthaba P",
+    position: "Working Committee Member",
+    image: "/images/team/mujthaba.jpg",
+  },
+  {
+    name: "Muzammil",
+    position: "Working Committee Member",
+    image: "/images/team/muzammil.jpg",
+  },
+  {
+    name: "Nisam K",
+    position: "Working Committee Member",
+    image: "/images/team/nisam.jpg",
+  },
+  {
+    name: "Sayyid M",
+    position: "Working Committee Member",
+    image: "/images/team/sayyidm.jpg",
   },
 ];
 
@@ -155,7 +170,7 @@ export default function Team() {
             stagger={0.05}
             delay={0.3}
           >
-            The People Behind The Vision
+            ദർശനത്തിന് പിന്നിലെ ആളുകൾ
           </TextReveal>
         </p>
 
@@ -184,9 +199,7 @@ export default function Team() {
           initial="hidden"
           animate="visible"
         >
-          A collective of passionate minds shaping bold ideas into reality.
-          Every member brings a unique perspective to craft experiences that
-          inspire and elevate.
+          ആവേശവും പ്രതിബദ്ധതയും നിറഞ്ഞ ഒരുമിച്ചുള്ള സംഘമാണ് ഞങ്ങൾ. ഓരോരുത്തരും വ്യത്യസ്തമായ കാഴ്ചപ്പാടുകൾ കൊണ്ടുവന്ന്, പ്രചോദനവും മൂല്യവും നൽകുന്ന പ്രവർത്തനങ്ങൾ രൂപപ്പെടുത്തുന്നു.
         </motion.p>
       </div>
 

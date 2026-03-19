@@ -101,7 +101,7 @@ export default function Hero() {
               stagger={0.08}
               delay={0.8}
             >
-              PERODE.
+              PERODE
             </TextReveal>
           </h1>
 

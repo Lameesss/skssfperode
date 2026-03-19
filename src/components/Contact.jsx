@@ -25,24 +25,6 @@ const containerVariants = {
 };
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };
 
   return (
     <section className="bg-white font-outfit relative overflow-hidden py-14 sm:py-28 md:py-36">
@@ -67,7 +49,7 @@ export default function Contact() {
                 duration={0.7}
                 stagger={0.06}
               >
-                Let&apos;s Start A
+                Take A Visit &
               </TextReveal>
               <br />
               <TextReveal
@@ -77,13 +59,13 @@ export default function Contact() {
                 stagger={0.06}
                 delay={0.3}
               >
-                Conversation.
+                Connect.
               </TextReveal>
             </h2>
           </div>
 
           <p className="max-w-sm text-black/50 text-sm sm:text-base leading-relaxed md:text-right">
-            Have a question or want to get involved? We&apos;d love to hear from you. Reach out and we&apos;ll get back to you shortly.
+            Have a question, need support, or want to get involved? Reach out to our team using the contact details or visit our office in Perode.
           </p>
         </div>
 
@@ -111,10 +93,10 @@ export default function Contact() {
                 Email
               </p>
               <a
-                href="mailto:hello@skssf.org"
-                className="text-lg sm:text-xl md:text-2xl font-semibold text-black hover:text-[#05004c] transition-colors duration-300"
+                href="mailto:Skssfperode786@gmail.com"
+                className="text-lg sm:text-xl md:text-2xl font-semibold text-black hover:text-[#05004c] transition-colors duration-300 break-all"
               >
-                hello@skssf.org
+                Skssfperode786@gmail.com
               </a>
             </motion.div>
 
@@ -122,12 +104,26 @@ export default function Contact() {
               <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-black/30 font-medium mb-2">
                 Phone
               </p>
-              <a
-                href="tel:+911234567890"
-                className="text-lg sm:text-xl md:text-2xl font-semibold text-black hover:text-[#05004c] transition-colors duration-300"
-              >
-                +91 123 456 7890
-              </a>
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-col">
+                  <span className="text-sm text-black/50 font-medium mb-1">President:</span>
+                  <a
+                    href="tel:+919645764901"
+                    className="text-lg sm:text-xl md:text-2xl font-semibold text-black hover:text-[#05004c] transition-colors duration-300"
+                  >
+                    +91 96457 64901
+                  </a>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-sm text-black/50 font-medium mb-1">Secretary:</span>
+                  <a
+                    href="tel:+919037171068"
+                    className="text-lg sm:text-xl md:text-2xl font-semibold text-black hover:text-[#05004c] transition-colors duration-300"
+                  >
+                    +91 90371 71068
+                  </a>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div variants={itemVariants}>
@@ -135,7 +131,7 @@ export default function Contact() {
                 Office
               </p>
               <p className="text-base sm:text-lg text-black/70 leading-relaxed">
-                SKSSF Headquarters,
+                SKSSF Office Perode,
                 <br />
                 Kerala, India
               </p>
@@ -146,116 +142,38 @@ export default function Contact() {
                 Follow Us
               </p>
               <div className="flex gap-4">
-                {["Facebook", "Instagram", "Twitter"].map((platform) => (
-                  <span
-                    key={platform}
-                    className="text-sm font-medium text-black/50 hover:text-[#05004c] transition-colors duration-300 cursor-pointer"
-                  >
-                    {platform}
-                  </span>
-                ))}
+                <a
+                  href="https://www.instagram.com/skssf.perode/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-black/50 hover:text-[#05004c] transition-colors duration-300 cursor-pointer"
+                >
+                  Instagram
+                </a>
               </div>
             </motion.div>
           </motion.div>
 
-          {/* Right - Contact Form */}
-          <motion.form
-            onSubmit={handleSubmit}
+          {/* Right - Location Map */}
+          <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
-            className="space-y-6 sm:space-y-8"
+            className="w-full h-[400px] sm:h-[500px] lg:h-full min-h-[400px] rounded-2xl md:rounded-3xl overflow-hidden bg-[#f5f5f7] relative border border-black/5"
           >
-            <motion.div variants={itemVariants}>
-              <label className="block text-xs sm:text-sm uppercase tracking-[0.15em] text-black/40 font-medium mb-2 sm:mb-3">
-                Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full bg-transparent border-b border-black/15 text-black text-base sm:text-lg py-3 focus:outline-none focus:border-[#05004c] transition-colors duration-500 placeholder:text-black/20"
-                placeholder="Your full name"
-              />
-            </motion.div>
-
-            <motion.div variants={itemVariants}>
-              <label className="block text-xs sm:text-sm uppercase tracking-[0.15em] text-black/40 font-medium mb-2 sm:mb-3">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full bg-transparent border-b border-black/15 text-black text-base sm:text-lg py-3 focus:outline-none focus:border-[#05004c] transition-colors duration-500 placeholder:text-black/20"
-                placeholder="your@email.com"
-              />
-            </motion.div>
-
-            <motion.div variants={itemVariants}>
-              <label className="block text-xs sm:text-sm uppercase tracking-[0.15em] text-black/40 font-medium mb-2 sm:mb-3">
-                Subject
-              </label>
-              <input
-                type="text"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-                className="w-full bg-transparent border-b border-black/15 text-black text-base sm:text-lg py-3 focus:outline-none focus:border-[#05004c] transition-colors duration-500 placeholder:text-black/20"
-                placeholder="What is this about?"
-              />
-            </motion.div>
-
-            <motion.div variants={itemVariants}>
-              <label className="block text-xs sm:text-sm uppercase tracking-[0.15em] text-black/40 font-medium mb-2 sm:mb-3">
-                Message
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows={4}
-                className="w-full bg-transparent border-b border-black/15 text-black text-base sm:text-lg py-3 focus:outline-none focus:border-[#05004c] transition-colors duration-500 placeholder:text-black/20 resize-none"
-                placeholder="Tell us more..."
-              />
-            </motion.div>
-
-            <motion.div variants={itemVariants} className="pt-4">
-              <button
-                type="submit"
-                className="group relative inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 rounded-full text-sm font-medium tracking-wide overflow-hidden transition-all duration-500 bg-[#05004c] text-white hover:shadow-lg hover:shadow-[#05004c]/20 cursor-pointer"
-              >
-                <span className="absolute inset-0 bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full" />
-                <span className="relative z-10">
-                  {submitted ? "MESSAGE SENT ✓" : "SEND MESSAGE"}
-                </span>
-                {!submitted && (
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    className="relative z-10"
-                  >
-                    <path
-                      d="M1 7h12M8 2l5 5-5 5"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                )}
-              </button>
-            </motion.div>
-          </motion.form>
+            {/* Embedded Google Map */}
+            <iframe
+              src="https://maps.google.com/maps?q=SKSSF%20Office%20Perode&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 grayscale contrast-125 opacity-90 transition-all duration-700 hover:grayscale-0 hover:opacity-100"
+            ></iframe>
+          </motion.div>
         </div>
       </div>
     </section>

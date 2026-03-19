@@ -5,29 +5,29 @@ import { TextReveal } from "@/components/TextReveal";
 
 const FAQS = [
   {
-    question: "What is SKSSF and what does it do?",
+    question: "SKSSF എന്താണ്?",
     answer:
-      "SKSSF is a community-driven organization dedicated to social welfare, education, and cultural development. We work closely with local communities to uplift and empower people through various programs and initiatives.",
+      "Samastha Kerala Sunni Students Federation സമസ്ത കേരള ജംഇയ്യത്തുൽ ഉലമയുടെ വിദ്യാർത്ഥി വിഭാഗമാണ്. വിദ്യാർത്ഥികളുടെ മതപരവും ലൗകികവുമായ വളർച്ച ലക്ഷ്യമാക്കി പ്രവർത്തിക്കുന്ന ഒരു സജീവ സംഘടനയാണ് ഇത്.",
   },
   {
-    question: "How can I become a member?",
+    question: "SKSSF-ന്റെ പ്രധാന ലക്ഷ്യം എന്താണ്?",
     answer:
-      "Becoming a member is simple. You can reach out through our contact page or visit any of our local offices. Our team will guide you through the registration process and help you get involved with our community activities.",
+      "വിദ്യാഭ്യാസമുള്ള, ശീലസമ്പന്നമായ, സമൂഹബോധമുള്ള ഒരു തലമുറയെ വളർത്തുകയാണ് SKSSF-ന്റെ പ്രധാന ലക്ഷ്യം. അറിവ്, മൂല്യബോധം, സേവന മനോഭാവം എന്നിവ വളർത്തുന്നതിലാണ് സംഘടന ശ്രദ്ധിക്കുന്നത്.",
   },
   {
-    question: "What programs and services do you offer?",
+    question: "SKSSF-ൽ ആരെല്ലാം അംഗങ്ങളാകാം?",
     answer:
-      "We offer a wide range of programs including educational support through our madrasas, community welfare initiatives, youth development programs, cultural events, and social outreach services designed to strengthen community bonds.",
+      "സ്കൂൾ, കോളേജ്, മദ്റസ തുടങ്ങിയ വിദ്യാഭ്യാസ സ്ഥാപനങ്ങളിൽ പഠിക്കുന്ന വിദ്യാർത്ഥികൾക്ക് SKSSF-ൽ അംഗത്വം നേടാം. പ്രാദേശിക യൂണിറ്റുകൾ വഴി എളുപ്പത്തിൽ ചേർക്കാം.",
   },
   {
-    question: "How is the organization funded?",
+    question: "SKSSF എന്തെല്ലാം പ്രവർത്തനങ്ങൾ നടത്തുന്നു?",
     answer:
-      "Our organization is funded through community contributions, membership fees, charitable donations, and partnerships with like-minded organizations. Every contribution goes directly toward community programs and development.",
+      "പഠന ക്ലാസുകൾ, സെമിനാറുകൾ, ക്യാമ്പുകൾ, കരിയർ മാർഗ്ഗനിർദ്ദേശം, സാമൂഹിക സേവന പ്രവർത്തനങ്ങൾ, സാംസ്കാരിക പരിപാടികൾ എന്നിവ SKSSF സ്ഥിരമായി സംഘടിപ്പിക്കുന്നു.",
   },
   {
-    question: "How can I contribute or volunteer?",
+    question: "SKSSF-യിൽ എങ്ങനെ ചേരാം?",
     answer:
-      "There are many ways to get involved — from volunteering at local events, contributing to community projects, mentoring youth, or supporting our initiatives financially. Contact us to find the best way you can make a difference.",
+      "താങ്കളുടെ പ്രദേശത്തെ SKSSF യൂണിറ്റുമായി ബന്ധപ്പെടുക അല്ലെങ്കിൽ പ്രാദേശിക ഭാരവാഹികളെ സമീപിക്കുക. അവർ അംഗത്വ നടപടികൾക്ക് ആവശ്യമായ സഹായം നൽകും.",
   },
 ];
 

@@ -59,39 +59,39 @@ const cardVariant = {
 const SERVICES = [
   {
     number: "01",
-    title: "Community Welfare",
+    title: "വിദ്യാഭ്യാസ വികസനം",
     description:
-      "Dedicated to the social and economic wellbeing of every family in our neighbourhood — from financial aid to healthcare support.",
+      "വിദ്യാർത്ഥികളുടെ അറിവ് വളർത്താൻ പഠന ക്ലാസുകളും പരിശീലന പരിപാടികളും സംഘടിപ്പിക്കുന്നു.",
   },
   {
     number: "02",
-    title: "Education & Youth",
+    title: "യുവജന ശാക്തീകരണം",
     description:
-      "Empowering the next generation through scholarships, mentorship programmes, and skill-development workshops for our youth.",
+      "നേതൃത്വ കഴിവുകളും വ്യക്തിത്വ വികസനവും പ്രോത്സാഹിപ്പിക്കുന്ന പ്രവർത്തനങ്ങൾ.",
   },
   {
     number: "03",
-    title: "Cultural Celebrations",
+    title: "സാംസ്കാരിക പ്രവർത്തനങ്ങൾ",
     description:
-      "Organising and preserving the cultural traditions, festivals, and gatherings that bind our community together across generations.",
+      "കലയും സംസ്കാരവും സംരക്ഷിച്ച് വളർത്തുന്ന വിവിധ പരിപാടികൾ.",
   },
   {
     number: "04",
-    title: "Charity & Outreach",
+    title: "സാമൂഹിക സേവനം",
     description:
-      "Running regular charity drives, food distributions, and outreach programmes to support the most vulnerable in our society.",
+      "ദുരിതബാധിതർക്കുള്ള സഹായവും സമൂഹക്ഷേമ പ്രവർത്തനങ്ങളും.",
   },
   {
     number: "05",
-    title: "Infrastructure & Facilities",
+    title: "ഡിജിറ്റൽ & കരിയർ മാർഗ്ഗനിർദ്ദേശം",
     description:
-      "Maintaining and improving communal spaces, the Mahallu hall, and shared infrastructure that serves every resident.",
+      "ആധുനിക വിദ്യാഭ്യാസവും കരിയർ സാധ്യതകളും പരിചയപ്പെടുത്തുന്ന പരിപാടികൾ.",
   },
   {
     number: "06",
-    title: "Dispute Resolution",
+    title: "ക്യാമ്പസ് പ്രവർത്തനങ്ങൾ",
     description:
-      "Providing a trusted, impartial platform for resolving neighbourhood disputes with fairness, transparency, and respect.",
+      "സ്കൂൾ, കോളേജ് തലങ്ങളിൽ സജീവമായ വിദ്യാർത്ഥി പങ്കാളിത്തം ഉറപ്പാക്കുന്നു.",
   },
 ];
 
@@ -143,8 +143,7 @@ export default function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
         >
-          A community rooted in faith, service, and togetherness — working
-          every day to uplift every household in our neighbourhood.
+          വിശ്വാസത്തിലും അറിവിലും സേവനത്തിലും ഉറച്ച അടിത്തറയോടെ, വിദ്യാർത്ഥികളെ ശീലസമ്പന്നരായ ഉത്തരവാദിത്തമുള്ള വ്യക്തികളായി വളർത്താൻ പ്രതിജ്ഞാബദ്ധമായ ഒരു സജീവ പ്രസ്ഥാനം.
         </motion.p>
       </div>
 
@@ -164,35 +163,27 @@ export default function AboutPage() {
               Our Story
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#05004c] leading-tight mb-6">
-              Serving the Community <br className="hidden sm:block" />
+              Serving the Students <br className="hidden sm:block" />
               for Generations
             </h2>
             <div className="space-y-4 text-black/65 text-sm sm:text-base leading-relaxed">
               <p>
-                Founded on the principles of unity and mutual care, our Mahallu
-                committee has stood as the backbone of this community for
-                decades. We are a volunteer-driven organisation committed to
-                the spiritual, social, and economic development of every family
-                under our wing.
+                സമസ്ത കേരള ജംഇയ്യത്തുൽ ഉലമയുടെ മാർഗ്ഗനിർദ്ദേശത്തിൽ രൂപം കൊണ്ട SKSSF, വിദ്യാർത്ഥികളുടെ മതപരവും ലൗകികവുമായ വളർച്ച ലക്ഷ്യമാക്കി പ്രവർത്തിക്കുന്ന ഒരു പ്രബല സംഘടനയാണ്. ഐക്യവും മൂല്യബോധവും മുൻനിർത്തി, സമൂഹത്തിൽ മാറ്റം സൃഷ്ടിക്കുന്ന തലമുറയെ വളർത്തുകയാണ് ഞങ്ങളുടെ ദൗത്യം.
               </p>
               <p>
-                From organising annual celebrations and charity drives to
-                resolving community disputes and supporting underprivileged
-                households — every action we take is guided by a deep sense of
-                responsibility and brotherhood.
+                പഠനവൃത്തങ്ങളും സെമിനാറുകളും മുതൽ സാമൂഹിക സേവന പ്രവർത്തനങ്ങളും കരിയർ മാർഗ്ഗനിർദ്ദേശവും വരെ, ഓരോ പ്രവർത്തനവും വിദ്യാർത്ഥികളുടെ സമഗ്ര വികസനത്തിനായി രൂപകൽപ്പന ചെയ്തതാണ്.
               </p>
               <p>
-                Today, we continue to evolve, embracing modern approaches while
-                staying true to the values that have always defined us.
+                ഇന്നും, നൂതന സാധ്യതകളെ ഉൾക്കൊണ്ട്, പാരമ്പര്യ മൂല്യങ്ങളെ നിലനിർത്തിക്കൊണ്ട് മുന്നേറുന്ന ഒരു ശക്തമായ വിദ്യാർത്ഥി പ്രസ്ഥാനമായി SKSSF തുടരുന്നു.
               </p>
             </div>
 
             {/* Stats row */}
             <div className="flex gap-8 sm:gap-12 mt-10 pt-8 border-t border-black/10">
               {[
-                { value: "20+", label: "Years of Service" },
-                { value: "500+", label: "Families Served" },
-                { value: "50+", label: "Events Organised" },
+                { value: "35+", label: "Years of Service" },
+                { value: "1000+", label: "Units Across Kerala" },
+                { value: "100K+", label: "Students Connected" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <p className="text-2xl sm:text-3xl font-bold text-[#05004c]">
@@ -216,8 +207,8 @@ export default function AboutPage() {
           >
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/3]">
               <Image
-                src="/images/about/about (1).jpg"
-                alt="About Mahallu committee"
+                src="/images/about/about1.jpg"
+                alt="About SKSSF"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 55vw"
@@ -319,8 +310,8 @@ export default function AboutPage() {
             viewport={{ once: true, margin: "-60px" }}
           >
             <Image
-              src="/images/about/about (2).jpg"
-              alt="Community gathering"
+              src="/images/about/about2.jpg"
+              alt="വിദ്യാർത്ഥി സംഗമങ്ങൾ"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 60vw"
@@ -338,8 +329,8 @@ export default function AboutPage() {
               viewport={{ once: true, margin: "-60px" }}
             >
               <Image
-                src="/images/about/about (3).jpg"
-                alt="Community service"
+                src="/images/about/about3.jpg"
+                alt="സേവന പ്രവർത്തനങ്ങൾ"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 40vw"
@@ -357,8 +348,7 @@ export default function AboutPage() {
                 Our Mission
               </p>
               <p className="text-black/70 text-sm sm:text-base leading-relaxed">
-                To foster a united, caring, and prosperous community — where
-                every individual is valued, supported, and empowered to thrive.
+                വിദ്യാഭ്യാസമുള്ള, ശീലസമ്പന്നരായ, സമൂഹബോധമുള്ള ഒരു തലമുറയെ വളർത്തി, വിശ്വാസത്തിലും മൂല്യങ്ങളിലും അധിഷ്ഠിതമായ ഒരു ഉന്നത സമൂഹം സൃഷ്ടിക്കുക.
               </p>
             </motion.div>
           </div>

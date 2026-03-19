@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -38,9 +39,13 @@ export default function Navbar() {
               {/* Logo */}
               <div className="flex-shrink-0">
                 <Link href="/" className="flex items-center">
-                  <span className="text-2xl font-bold tracking-widest font-[family-name:var(--font-outfit)]" style={{ color: "#05004c" }}>
-                    SKSSF
-                  </span>
+                  <Image 
+                    src="/images/logo/logo.jpeg" 
+                    alt="SKSSF Logo" 
+                    width={150} 
+                    height={150} 
+                    className="object-contain w-16 h-16 md:w-20 md:h-20 rounded-full" 
+                  />
                 </Link>
               </div>
 
@@ -78,28 +83,7 @@ export default function Navbar() {
                 </Link>
               </div>
 
-              {/* Right Side Actions */}
-              <div className="hidden md:flex items-center space-x-6">
-                <Link
-                  href="/contact"
-                  className="relative px-6 py-3 rounded-full text-sm font-medium tracking-wide transition-all duration-300 font-[family-name:var(--font-outfit)] overflow-hidden group"
-                  style={{
-                    backgroundColor: "#05004c",
-                    color: "white",
-                  }}
-                >
-                  <span className="relative z-10 text-white transition-all duration-300 ease-out group-hover:translate-y-full group-hover:opacity-0">
-                    CONTACT US →
-                  </span>
-                  <span
-                    className="absolute inset-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out rounded-full"
-                    style={{ backgroundColor: "#DC3F4D" }}
-                  />
-                  <span className="absolute inset-0 flex items-center justify-center -translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out z-20 text-white">
-                    CONTACT US →
-                  </span>
-                </Link>
-              </div>
+              {/* Right Side Actions removed as requested */}
 
               {/* Mobile Menu Button */}
               <div className="md:hidden">
@@ -222,33 +206,7 @@ export default function Navbar() {
               {/* Supplements */}
             </div>
 
-            {/* Get Started Button */}
-            <div className="p-8">
-              <Link
-                href="/contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className={`relative block w-full text-center py-4 rounded-full text-sm font-medium tracking-wide transition-all duration-500 delay-[400ms] font-[family-name:var(--font-outfit)] overflow-hidden group ${
-                  mobileMenuOpen
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-8"
-                }`}
-                style={{
-                  backgroundColor: "#05004c",
-                  color: "white",
-                }}
-              >
-                <span className="relative z-10 text-white transition-all duration-300 ease-out group-hover:translate-y-full group-hover:opacity-0">
-                  CONTACT US →
-                </span>
-                <span
-                  className="absolute inset-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out rounded-full"
-                  style={{ backgroundColor: "#DC3F4D" }}
-                />
-                <span className="absolute inset-0 flex items-center justify-center -translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out z-20 text-white">
-                  CONTACT US →
-                </span>
-              </Link>
-            </div>
+            {/* Get Started Button removed as requested */}
           </div>
         </div>
       </div>

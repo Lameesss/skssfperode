@@ -6,47 +6,55 @@ import { motion } from "framer-motion";
 import { TextReveal } from "@/components/TextReveal";
 
 const UPCOMING_EVENT = {
-  title: "Annual Community Gala 2026",
-  date: "April 15, 2026",
-  time: "6:00 PM onwards",
-  location: "Mahallu Community Hall, Main Street",
+  title: "Iftar Meet",
+  date: "റമളാൻ മാസം",
+  time: "6:00 PM",
+  location: "Perode School Ground, Perode",
   description:
-    "Join us for a grand evening celebrating unity, culture, and community spirit. The Annual Community Gala brings together families and neighbours for an unforgettable night of food, entertainment, and heartfelt fellowship.",
-  image: "/images/events/events (1).jpg",
+    "കഴിഞ്ഞ രണ്ട് വർഷങ്ങളിലായി റമളാൻ മാസത്തിൽ നാട്ടിലുള്ള പ്രായവ്യത്യാസമില്ലാതെ മുഴുവൻ പുരുഷന്മാരെയും പങ്കെടുപ്പിച്ചു ഇഫ്താർ സംഗമം നടത്തുവാനും റമളാൻ സന്ദേശം നൽകുവാനും ശാഖ കമ്മിറ്റിക്ക് സാധിച്ചിട്ടുണ്ട്.",
+  image: "/images/events/iftarmeet.jpg",
 };
 
 const PREVIOUS_EVENTS = [
   {
     id: 1,
-    title: "Youth Leadership Summit",
-    date: "January 12, 2026",
+    title: "Ishq Majilis",
+    date: "December 10, 2025",
     description:
-      "An inspiring day-long summit empowering the youth of our community with leadership skills, workshops, and mentoring sessions from esteemed community leaders.",
-    image: "/images/events/events (2).jpg",
+      "തിരുനബി (സ്വ)യുടെ മദ്ഹോടെ സമർപ്പിച്ച ഒരു ആത്മീയ ക്യാമ്പയിൻ — റബീഉൽ അവ്വൽ മാസത്തിൽ ശാഖ പ്രവർത്തകരുടെ വീടുകളിൽ മൗലിദ് സദസ്സുകൾ സംഘടിപ്പിച്ച് സ്നേഹവും വിശ്വാസവും പങ്കുവെച്ച അനുഭവം.",
+    image: "/images/events/ishgmajilis.jpg",
   },
   {
     id: 2,
-    title: "Mahallu Charity Drive 2025",
-    date: "November 20, 2025",
+    title: "Greeting Student",
+    date: "November 12, 2025",
     description:
-      "A heartfelt campaign that raised funds and collected essentials for underprivileged families, strengthening the bonds of our neighbourhood.",
-    image: "/images/events/events (3).jpg",
+      "മദ്റസയിലെ ഒന്നാം തരത്തിലേക്ക് പുതുതായി പ്രവേശിക്കുന്ന വിദ്യാർത്ഥികൾക്ക് ഓരോ വർഷവും സ്നേഹപൂർവ്വമായ വരവേൽപ്പ് ഒരുക്കി, അവരുടെ പഠനയാത്രയ്ക്ക് ആത്മവിശ്വാസവും പ്രചോദനവും നൽകുന്ന ഒരു പ്രത്യേക പരിപാടി.",
+    image: "/images/events/greetingstudent.jpg",
   },
   {
     id: 3,
-    title: "Eid Al-Adha Community Feast",
-    date: "June 17, 2025",
+    title: "Relief Support Drive",
+    date: "April 5, 2025",
     description:
-      "A joyous celebration bringing the entire community together for prayers, traditional feasting, and sharing the spirit of sacrifice and generosity.",
-    image: "/images/events/events (4).jpg",
+      "വിലങ്ങാട് ഉരുൾപൊട്ടലിൽ വീടുകൾ നഷ്ടപ്പെട്ട് ക്യാമ്പിൽ കഴിയുന്നവർക്ക് വസ്ത്രങ്ങളും ഭക്ഷണങ്ങളും എത്തിച്ചു നൽകി, സഹാനുഭൂതിയും സേവന മനോഭാവവും പ്രകടിപ്പിച്ചൊരു പ്രവർത്തനം.",
+    image: "/images/events/reliefsupport.jpg",
   },
   {
     id: 4,
-    title: "Mahallu Foundation Day",
-    date: "March 3, 2025",
+    title: "Viqaya",
+    date: "April 1, 2025",
     description:
-      "Marking another proud year of service, honouring volunteers, celebrating milestones, and charting the vision for the year ahead.",
-    image: "/images/events/events (5).jpg",
+      "അവർ സജ്ജരാണ് എവിടെയും, എപ്പോഴും — പ്രളയ സമയത്ത് പ്രയാസം അനുഭവിച്ചവർക്കായി SKSSF വിഖായ ടീം സജീവമായി രംഗത്തെത്തി, വെള്ളം കയറിയ വീടുകളും പള്ളികളും നാട്ടുകാരോടൊപ്പം ചേർന്ന് പൂർവസ്ഥിതിയിലേക്ക് പുനഃസ്ഥാപിച്ച സേവന പ്രവർത്തനം.",
+    image: "/images/events/vaqaya.jpg",
+  },
+  {
+    id: 5,
+    title: "Tharbiyya Tutelage",
+    date: "May 22, 2022",
+    description:
+      "പിഞ്ചു വിദ്യാർത്ഥികൾക്ക് മതപരവും ഭൗതികവുമായ വിദ്യാഭ്യാസത്തിന് അടിത്തറ പാകി നൽകുന്ന പരിശീലന പദ്ധതി — ശീലപരിപോഷണം, സാമൂഹിക ബോധം, ആത്മവിശ്വാസം എന്നിവ വളർത്തുന്ന ഒരു മാർഗ്ഗദർശക പ്രവർത്തനം.",
+    image: "/images/events/Tharbiyyatutelage.jpg",
   },
 ];
 

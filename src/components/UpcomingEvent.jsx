@@ -5,13 +5,13 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const UPCOMING_EVENT = {
-  title: "Annual Community Gala 2026",
-  date: "April 15, 2026",
-  time: "6:00 PM onwards",
-  location: "Mahallu Community Hall, Main Street",
+  title: "Iftar Meet",
+  date: "റമളാൻ മാസം",
+  time: "6:00 PM",
+  location: "Perode School Ground, Perode",
   description:
-    "Join us for a grand evening celebrating unity, culture, and community spirit. The Annual Community Gala brings together families and neighbours for an unforgettable night of food, entertainment, and heartfelt fellowship.",
-  image: "/images/events/events (1).jpg",
+    "കഴിഞ്ഞ രണ്ട് വർഷങ്ങളിലായി റമളാൻ മാസത്തിൽ നാട്ടിലുള്ള പ്രായവ്യത്യാസമില്ലാതെ മുഴുവൻ പുരുഷന്മാരെയും പങ്കെടുപ്പിച്ചു ഇഫ്താർ സംഗമം നടത്തുവാനും റമളാൻ സന്ദേശം നൽകുവാനും ശാഖ കമ്മിറ്റിക്ക് സാധിച്ചിട്ടുണ്ട്.",
+  image: "/images/events/iftarmeet.jpg",
 };
 
 const fadeUp = {

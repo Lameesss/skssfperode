@@ -3,9 +3,8 @@
 // import hero_banner from "../../public/images/hero_banner.png";
 
 // Project main cards from public/images/clay/
-import card2 from "../../public/images/clay/462077483.jpg";
-import card4 from "../../public/images/clay/card2.jpg";
-import card5 from "../../public/images/clay/card5.jpg";
+import card2 from "../../public/images/clay/card2.jpg";
+import card4 from "../../public/images/clay/card4.jpg";
 
 // Project sub-cards (overlays) from public/images/clay/
 import card1_1 from "../../public/images/clay/card1.1.jpg";
@@ -27,11 +26,12 @@ import card5_5 from "../../public/images/clay/card5.5.jpg";
 // import ic_kanba from "../../public/svgs/ic_kanba.svg";
 // import ic_utosia from "../../public/svgs/ic_utosia.svg";
 
-// Card 1 and Card 3 use videos
-export const card1Video = "/images/clay/intro.mp4";
-export const card3Video = "/images/clay/intro2.mp4";
+// Card 1, 3, and 5 use videos
+export const card1Video = "/images/clay/card1.mp4";
+export const card3Video = "/images/clay/card3.mp4";
+export const card5Video = "/images/clay/card5.mp4";
 
-export const PROJECTS_IMAGES = [card1Video, card2, card3Video, card4, card5];
+export const PROJECTS_IMAGES = [card1Video, card2, card3Video, card4, card5Video];
 export const PROJECTS_OVERLAY_IMAGES = [card1_1, card2_2, card3_3, card4_4, card5_5];
 
 // Placeholders until actual image files are added

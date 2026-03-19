@@ -6,11 +6,11 @@ import { TextReveal } from "@/components/TextReveal";
 import { motion } from "framer-motion";
 
 const PREVIEW_MEMBERS = [
-  { name: "Member 1", position: "Committee Member", image: "/images/team/member1 (2).jpg" },
-  { name: "Member 2", position: "Committee Member", image: "/images/team/member1 (3).jpg" },
-  { name: "Member 3", position: "Committee Member", image: "/images/team/member1 (4).jpg" },
-  { name: "Member 4", position: "Committee Member", image: "/images/team/member1 (5).jpg" },
-  { name: "Member 5", position: "Committee Member", image: "/images/team/member1 (6).jpg" },
+  { name: "Sanah K", position: "President", image: "/images/team/sanahk.jpg" },
+  { name: "Basil T P", position: "Secretary", image: "/images/team/basiltp.jpg" },
+  { name: "Rasin M", position: "Treasurer", image: "/images/team/rasinm.jpg" },
+  { name: "Nujoom Hudavi", position: "Vice President", image: "/images/team/nujoomhudavi.jpg" },
+  { name: "Ashfaq U K", position: "Working Secretary", image: "/images/team/ashfaquk.jpg" },
 ];
 
 const containerVariants = {

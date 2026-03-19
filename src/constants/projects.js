@@ -2,32 +2,32 @@ import { PROJECTS_IMAGES, PROJECTS_OVERLAY_IMAGES, SERVICES_IMAGES } from "./ima
 
 export const PROJECTS = [
   {
-    name: "Acme",
-    year: "2024",
+    name: "Flag day",
+    date: "Jan 18 2026",
     image: PROJECTS_IMAGES[0],
     overlayImage: PROJECTS_OVERLAY_IMAGES[0],
   },
   {
-    name: "Kanba",
-    year: "2024",
+    name: "SKSSF സ്ഥാപക ദിനം",
+    date: "Feb 19 2026",
     image: PROJECTS_IMAGES[1],
     overlayImage: PROJECTS_OVERLAY_IMAGES[1],
   },
   {
-    name: "Goldline",
-    year: "2024",
+    name: "Free palestine documentry",
+    date: "Sep 16 2025",
     image: PROJECTS_IMAGES[2],
     overlayImage: PROJECTS_OVERLAY_IMAGES[2],
   },
   {
-    name: "Utosia",
-    year: "2024",
+    name: "ഇഫ്താർ സംഗമം",
+    date: "April 3 2025",
     image: PROJECTS_IMAGES[3],
     overlayImage: PROJECTS_OVERLAY_IMAGES[3],
   },
   {
-    name: "Nexus",
-    year: "2023",
+    name: "Majilisin noor",
+    date: "June 27 2022",
     image: PROJECTS_IMAGES[4],
     overlayImage: PROJECTS_OVERLAY_IMAGES[4],
   },

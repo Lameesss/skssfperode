@@ -28,20 +28,7 @@ const Projects = () => {
   const contentRef = useRef(null);
   const { isLoading, animationComplete } = useContext(LoadingContext);
 
-  // Animated heading state
-  const headings = ["SKSSF", "Perode", "Shaka", "Unit."];
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [key, setKey] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % headings.length);
-      setKey((prev) => prev + 1);
-    }, 1000); // Change text every 1 second
-
-    return () => clearInterval(interval);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   useEffect(() => {
     if (!isLoading && animationComplete) {
@@ -79,28 +66,21 @@ const Projects = () => {
       className="bg-white min-h-screen perspective-section relative z-20 font-outfit"
     >
       <main ref={contentRef} className="transform-container">
-        <header className="w-[90%] mx-auto max-w-[1440px] pt-[6rem] pb-[3rem] space-y-8">
-          <div className="space-y-6">
-            <h2 className="text-[3rem] sm:text-[4rem] md:text-[4rem] lg:text-[6rem] xl:text-[8rem] font-semibold -tracking-[0.02345rem] leading-[130%] text-[#05004c]">
-              <TextReveal
-                key={key}
-                splitType="chars"
-                direction="up"
-                duration={0.5}
-                stagger={0.05}
-                delay={0.2}
-              >
-                {headings[currentIndex]}
-              </TextReveal>
-            </h2>
+        <header className="w-[90%] mx-auto max-w-[1440px] pt-[6rem] pb-[6rem] md:pb-[10rem] space-y-8">
+          <div className="w-full overflow-hidden flex whitespace-nowrap">
+            <div className="flex whitespace-nowrap items-center animate-marquee">
+              {[...Array(4)].map((_, i) => (
+                <h2
+                  key={i}
+                  className="text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] font-semibold -tracking-[0.02345rem] leading-[130%] text-[#05004c] pr-8 sm:pr-12 inline-block"
+                >
+                  SKSSF • Perode • Shaka • •
+                </h2>
+              ))}
+            </div>
           </div>
 
-          {/* Description Paragraph */}
-          <div className="max-w-4xl">
-            <p className="text-black/80 text-base md:text-lg lg:text-xl leading-relaxed">
-              Every project is a chance to blend strategy and systems, shaping bold interactive ideas into <span className="font-bold text-black">sleek digital realities — built with</span> intent, speed, and visual clarity that attracts lot of peoples.
-            </p>
-          </div>
+
         </header>
 
         {/* Asymmetric Project Grid */}
@@ -118,18 +98,18 @@ const Projects = () => {
             {/* Row 1: Two cards - Medium-Large left, Small right */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 mb-12 md:mb-16">
               {/* Card 1 - Medium-Large */}
-              <div className={`${MOBILE_BG_WIDTH} md:col-span-6`}>
+              <div className={`${MOBILE_BG_WIDTH} md:col-span-5 lg:col-span-6`}>
                 <LayeredProjectCard
                   project={PROJECTS[0]}
                   index={0}
-                  bgHeight={`${MOBILE_BG_HEIGHT} md:h-auto`}
+                  bgHeight={`${MOBILE_BG_HEIGHT} md:h-[400px] lg:h-[500px]`}
                   overlayWidth={`${MOBILE_OVERLAY_WIDTH} md:w-[35%]`}
                   overlayHeight={`${MOBILE_OVERLAY_HEIGHT} md:h-auto`}
                   variant="landscape"
                 />
               </div>
               {/* Card 2 - Small, positioned higher on right */}
-              <div className={`${MOBILE_BG_WIDTH} md:col-start-9 md:col-span-6 md:-mt-16`}>
+              <div className={`${MOBILE_BG_WIDTH} md:col-start-8 lg:col-start-9 md:col-span-5 lg:col-span-4 md:-mt-8 lg:-mt-16`}>
                 <LayeredProjectCard
                   project={PROJECTS[1]}
                   index={1}
@@ -137,6 +117,7 @@ const Projects = () => {
                   bgHeight={MOBILE_BG_HEIGHT}
                   overlayWidth={`${MOBILE_OVERLAY_WIDTH} md:w-[50%]`}
                   overlayHeight={`${MOBILE_OVERLAY_HEIGHT} md:h-44`}
+                  objectPosition="object-top"
                 />
               </div>
             </div>
@@ -195,7 +176,8 @@ const LayeredProjectCard = ({
   variant = "portrait",
   bgHeight = "h-auto",
   overlayHeight,
-  overlayWidth
+  overlayWidth,
+  objectPosition = "object-center"
 }) => {
     const isLandscape = variant === "landscape";
 
@@ -223,7 +205,7 @@ const LayeredProjectCard = ({
               <Image
                 src={project.image}
                 alt={project.name}
-                className={`object-cover w-full ${bgHeight} transition-transform duration-700 group-hover:scale-105`}
+                className={`object-cover ${objectPosition} w-full ${bgHeight} transition-transform duration-700 group-hover:scale-105`}
               />
             )}
           </DiagonalReveal>
@@ -261,7 +243,7 @@ const LayeredProjectCard = ({
               stagger={0.08}
               delay={0.2}
             >
-              {`(${index + 1})`}
+              {project.date}
             </TextReveal>
           </p>
         </div>

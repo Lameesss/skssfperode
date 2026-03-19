@@ -8,10 +8,13 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const STATS = [
-  { value: 1200, suffix: "+", label: "Houses" },
-  { value: 15, suffix: "+", label: "Madrasa" },
-  { value: 8, suffix: "", label: "Masjid" },
+  { value: 1, suffix: "", label: "Madrasa" },
   { value: 5000, suffix: "+", label: "Members" },
+  { value: 4, suffix: "", label: "Masjid" },
+  { value: 400, suffix: "+", label: "Houses" },
+  { value: 20000, suffix: "+", label: "Income" },
+  { value: 3000, suffix: "+", label: "Expense" },
+  { value: 17000, suffix: "", label: "Balance" },
 ];
 
 function AnimatedCounter({ target, suffix, trigger }) {
@@ -115,7 +118,7 @@ export default function Data() {
 
         {/* Stats Grid */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 md:gap-16"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-12 sm:gap-x-10 sm:gap-y-16 md:gap-x-12 md:gap-y-20 lg:gap-x-10"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -125,9 +128,9 @@ export default function Data() {
             <motion.div
               key={stat.label}
               variants={itemVariants}
-              className="group text-center md:text-left"
+              className="group text-center md:text-left flex flex-col"
             >
-              <div className="text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold leading-none text-[#05004c]/80 tracking-tight">
+              <div className="text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] font-bold leading-none text-[#05004c]/80 tracking-tight overflow-visible">
                 <AnimatedCounter
                   target={stat.value}
                   suffix={stat.suffix}
