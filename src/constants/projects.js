@@ -8,7 +8,7 @@ export const PROJECTS = [
     overlayImage: PROJECTS_OVERLAY_IMAGES[0],
   },
   {
-    name: "SKSSF സ്ഥാപക ദിനം",
+    name: "SKSSF Foundation Day",
     date: "Feb 19 2026",
     image: PROJECTS_IMAGES[1],
     overlayImage: PROJECTS_OVERLAY_IMAGES[1],
@@ -20,13 +20,13 @@ export const PROJECTS = [
     overlayImage: PROJECTS_OVERLAY_IMAGES[2],
   },
   {
-    name: "ഇഫ്താർ സംഗമം",
+    name: "Majilisin noor",
     date: "April 3 2025",
     image: PROJECTS_IMAGES[3],
     overlayImage: PROJECTS_OVERLAY_IMAGES[3],
   },
   {
-    name: "Majilisin noor",
+    name: "Iftar meet",
     date: "June 27 2022",
     image: PROJECTS_IMAGES[4],
     overlayImage: PROJECTS_OVERLAY_IMAGES[4],

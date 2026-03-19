@@ -170,7 +170,7 @@ export default function Team() {
             stagger={0.05}
             delay={0.3}
           >
-            ദർശനത്തിന് പിന്നിലെ ആളുകൾ
+           The People Behind The Vision
           </TextReveal>
         </p>
 
