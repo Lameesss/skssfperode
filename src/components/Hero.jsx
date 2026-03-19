@@ -7,9 +7,8 @@ import Image from "next/image";
 import { TextReveal } from "./TextReveal";
 
 const images = [
-  "/images/hero/hero.jpg",
-  "/images/hero/hero2.jpg",
-  "/images/hero/hero3.jpg",
+  "/images/hero/new1.jpeg",
+  "/images/hero/new2.jpeg",
 ];
 
 const slideVariants = {

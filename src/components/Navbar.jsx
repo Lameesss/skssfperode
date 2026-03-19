@@ -37,7 +37,7 @@ export default function Navbar() {
           <div className="px-6 sm:px-8 lg:px-10">
             <div className="flex items-center justify-between h-16 md:h-20">
               {/* Logo */}
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 z-10">
                 <Link href="/" className="flex items-center">
                   <Image 
                     src="/images/logo/logo.jpeg" 
@@ -47,6 +47,13 @@ export default function Navbar() {
                     className="object-contain w-16 h-16 md:w-20 md:h-20 rounded-full" 
                   />
                 </Link>
+              </div>
+
+              {/* Center Text */}
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none text-center">
+                <h1 className="text-sm sm:text-lg md:text-2xl font-bold tracking-[0.1em] sm:tracking-[0.15em] lg:tracking-[0.2em] text-[#05004c] font-[family-name:var(--font-outfit)] uppercase whitespace-nowrap">
+                  SKSSF PERODE SHAKA
+                </h1>
               </div>
 
               {/* Desktop Navigation */}
