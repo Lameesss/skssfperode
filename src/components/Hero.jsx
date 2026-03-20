@@ -80,7 +80,7 @@ export default function Hero() {
             style={{
               fontSize: "clamp(3rem, 8vw, 7rem)",
               fontFamily: "var(--font-outfit)",
-              color: "#05004c",
+              color: "#ffffff",
             }}
           >
             <TextReveal
@@ -108,7 +108,7 @@ export default function Hero() {
           <div
             ref={lineRef}
             className="h-[2px] w-32 mt-4 origin-left"
-            style={{ backgroundColor: "#05004c", transform: "scaleX(0)" }}
+            style={{ backgroundColor: "#ffffff", transform: "scaleX(0)" }}
           />
         </div>
       </div>
@@ -126,7 +126,7 @@ export default function Hero() {
               className="block h-[2px] rounded-full transition-all duration-500"
               style={{
                 width: i === current ? "2.5rem" : "1rem",
-                backgroundColor: i === current ? "#05004c" : "rgba(0,0,76,0.3)",
+                backgroundColor: i === current ? "#ffffff" : "rgba(255,255,255,0.3)",
               }}
             />
           </button>
