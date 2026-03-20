@@ -51,8 +51,11 @@ export default function Navbar() {
 
               {/* Center Text */}
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none text-center">
-                <h1 className="text-sm sm:text-lg md:text-2xl font-bold tracking-[0.1em] sm:tracking-[0.15em] lg:tracking-[0.2em] text-[#05004c] font-[family-name:var(--font-outfit)] uppercase whitespace-nowrap">
-                  SKSSF PERODE SHAKA
+                <h1 
+                  className="text-sm sm:text-lg md:text-2xl font-bold tracking-[0.1em] sm:tracking-[0.15em] lg:tracking-[0.2em] font-[family-name:var(--font-outfit)] uppercase whitespace-nowrap transition-colors duration-500"
+                  style={{ color: scrolled ? '#05004c' : '#ffffff' }}
+                >
+                  SKSSF PERODE UNIT
                 </h1>
               </div>
 
@@ -62,36 +65,31 @@ export default function Navbar() {
 
                 <Link
                   href="/"
-                  className="text-sm font-medium tracking-wide hover:opacity-70 transition-opacity font-[family-name:var(--font-outfit)]"
-                  style={{ color: "#000000" }}
+                  className={`text-sm font-medium tracking-wide hover:opacity-70 transition-all duration-500 font-[family-name:var(--font-outfit)] ${scrolled ? 'text-black' : 'text-white'}`}
                 >
                   HOME
                 </Link>
                 <Link
                   href="/about"
-                  className="text-sm font-medium tracking-wide hover:opacity-70 transition-opacity font-[family-name:var(--font-outfit)]"
-                  style={{ color: "#000000" }}
+                  className={`text-sm font-medium tracking-wide hover:opacity-70 transition-all duration-500 font-[family-name:var(--font-outfit)] ${scrolled ? 'text-black' : 'text-white'}`}
                 >
                   ABOUT
                 </Link>
                 <Link
                   href="/team"
-                  className="text-sm font-medium tracking-wide hover:opacity-70 transition-opacity font-[family-name:var(--font-outfit)]"
-                  style={{ color: "#000000" }}
+                  className={`text-sm font-medium tracking-wide hover:opacity-70 transition-all duration-500 font-[family-name:var(--font-outfit)] ${scrolled ? 'text-black' : 'text-white'}`}
                 >
                   TEAM
                 </Link>
                 <Link
                   href="/events"
-                  className="text-sm font-medium tracking-wide hover:opacity-70 transition-opacity font-[family-name:var(--font-outfit)]"
-                  style={{ color: "#000000" }}
+                  className={`text-sm font-medium tracking-wide hover:opacity-70 transition-all duration-500 font-[family-name:var(--font-outfit)] ${scrolled ? 'text-black' : 'text-white'}`}
                 >
                   EVENTS
                 </Link>
                 <Link
                   href="/accounts"
-                  className="text-sm font-medium tracking-wide hover:opacity-70 transition-opacity font-[family-name:var(--font-outfit)]"
-                  style={{ color: "#000000" }}
+                  className={`text-sm font-medium tracking-wide hover:opacity-70 transition-all duration-500 font-[family-name:var(--font-outfit)] ${scrolled ? 'text-black' : 'text-white'}`}
                 >
                   ACCOUNTS
                 </Link>
@@ -103,8 +101,7 @@ export default function Navbar() {
               <div className="md:hidden">
                 <button
                   onClick={() => setMobileMenuOpen(true)}
-                  className="text-xs font-semibold tracking-widest hover:opacity-70 transition-opacity font-[family-name:var(--font-outfit)]"
-                  style={{ color: "#000000" }}
+                  className={`text-xs font-semibold tracking-widest hover:opacity-70 transition-all duration-500 font-[family-name:var(--font-outfit)] ${scrolled ? 'text-black' : 'text-white'}`}
                   aria-label="Open menu"
                 >
                   MENU

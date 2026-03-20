@@ -74,7 +74,7 @@ const Projects = () => {
                   key={i}
                   className="text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] font-semibold -tracking-[0.02345rem] leading-[130%] text-[#05004c] pr-8 sm:pr-12 inline-block"
                 >
-                  SKSSF • Perode • Shaka • •
+                  SKSSF • PERODE • UNIT • •
                 </h2>
               ))}
             </div>
